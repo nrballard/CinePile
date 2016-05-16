@@ -187,25 +187,23 @@
     </div>
     <div id="addnew" style="display:none">
       <h2>Add Media</h2>
-      <form name="searchForm" onsubmit="javascript:remoteSearch(vidTitle.value, vidType.value); return false">
-	<div class="ui-field-contain">
-	  <label for="title">Title:</label>
-	  <input type="text" name="vidTitle" id="vidTitle" value="" data-clear-btn="true">
-	</div>
-	<div class="ui-field-contain">
-	  <label for="vidType">Type:</label>
-	  <select name="vidType" id="vidType">
-	    <option value="movie">Movie</option>
-	    <option value="series">TV Series</option>
-	  </select>
-	</div>
-	<br>
-	<br>
-	<input type="button" data-icon="search" value="Search"
-	       onclick="javascript:remoteSearch(vidTitle.value, vidType.value);" />
-	<input type="button" data-icon="back" value="Back"
-	       onclick="javascript:switchView('#addnew', '#main');" />
-      </form>
+      <div class="ui-field-contain">
+	<label for="title">Title:</label>
+	<input type="text" name="vidTitle" id="vidTitle" value="" data-clear-btn="true">
+      </div>
+      <div class="ui-field-contain">
+	<label for="vidType">Type:</label>
+	<select name="vidType" id="vidType">
+	  <option value="movie">Movie</option>
+	  <option value="series">TV Series</option>
+	</select>
+      </div>
+      <br>
+      <br>
+      <input type="button" data-icon="search" value="Search"
+	     onclick="javascript:remoteSearch(vidTitle.value, vidType.value);" />
+      <input type="button" data-icon="back" value="Back"
+	     onclick="javascript:switchView('#addnew', '#main');" />
     </div>
     <div id="details" style="display:none">
       <div id="data">
